@@ -1,0 +1,84 @@
+{% extends 'base.html' %}
+{% block body %}
+    {% include 'header.html' %}
+
+    <div class="container px-4 py-3">
+        <h2 class="pb-2 border-bottom">Resume</h2>
+        <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-1">
+            <div class="d-flex flex-column align-items-start gap-2">
+                <h3 class="fw-bold">Personal data</h3>
+                <ul>
+                    <li>Name: Taran Andrii Igorovich</li>
+                    <li>Date of birth: November 12, 1987 (35 years old).</li>
+                    <li>Place of residence: the city of Dnipro.</li>
+                </ul>
+                <a href="#" class="btn btn-primary btn-lg">Primary button</a>
+            </div>
+            <div class="row row-cols-1 row-cols-sm-2 g-4">
+                <div class="d-flex flex-column gap-2">
+                    <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+                        <svg class="bi" width="1em" height="1em">
+                            <use xlink:href="#collection"></use>
+                        </svg>
+                    </div>
+                    <h4 class="fw-semibold mb-0">Education</h4>
+                    <ul>
+                        <li>Higher. Study period: from 09.2005 to 06.2010. Dnipro State Academy of Construction and
+                            Architecture, Heating and Gas Supply and Ventilation, master's degree, engineer-designer.
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="d-flex flex-column gap-2">
+                    <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+                        <svg class="bi" width="1em" height="1em">
+                            <use xlink:href="#gear-fill"></use>
+                        </svg>
+                    </div>
+                    <h4 class="fw-semibold mb-0">About myself</h4>
+                        <ul>
+                            <li>Personal qualities: Ambition, determination, diligence, ability to work in a team.</li>
+                            <li>Category B driver's license.</li>
+                        </ul>
+                </div>
+
+                <div class="d-flex flex-column gap-2">
+                    <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+                        <svg class="bi" width="1em" height="1em">
+                            <use xlink:href="#speedometer"></use>
+                        </svg>
+                    </div>
+                    <h4 class="fw-semibold mb-0">Experience</h4>
+                    <ul>
+                        <li>01.2020 to the present time
+                            Dnipro branch of "Volia/DataGroup" LLC.
+                            Chief Engineer, Department of Customer Service and Maintenance.
+                        </li>
+                        <li>10.2014 - 12.2019
+                            Dnipro branch of "Volia" LLC.
+                            Head of Sector, Technical Service Sector.
+                        </li>
+                        <li>09.2009 - 06.2014
+                            Dnipro branch of "Volia" LLC.
+                            Service specialist.
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="d-flex flex-column gap-2">
+                    <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+                        <svg class="bi" width="1em" height="1em">
+                            <use xlink:href="#table"></use>
+                        </svg>
+                    </div>
+                    <h4 class="fw-semibold mb-0">Additional Information</h4>
+                    <ul>
+                        <li>Confident PC user: MS Office, AutoCad, Visio Viever.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% include 'footer.html' %}
+{% endblock %}
